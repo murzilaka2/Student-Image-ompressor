@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Оптимизатор изображений</h1>
+    <p>Загрузите ваше изображение и получите уменьшенный объем</p>
+    <form asp-action="LoadFile" asp-controller="Home" method="post" enctype="multipart/form-data">
+        <input type="file" name="uploadedFile" />
+        <input type="submit" value="Загрузить" />
+    </form>
+</div>
